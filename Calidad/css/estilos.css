@@ -1,0 +1,322 @@
+/* Variables CSS */
+:root {
+    --color-primario: #2c3e50;
+    --color-secundario: #3498db;
+    --color-exito: #27ae60;
+    --color-peligro: #e74c3c;
+    --color-advertencia: #f39c12;
+    --color-claro: #ecf0f1;
+    --color-oscuro: #34495e;
+    --color-blanco: #ffffff;
+    --color-gris: #95a5a6;
+    --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --sombra-hover: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos Generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--color-oscuro);
+}
+
+/* Colores de Bootstrap personalizados */
+.bg-primario {
+    background-color: var(--color-primario) !important;
+}
+
+.bg-secundario {
+    background-color: var(--color-secundario) !important;
+}
+
+.bg-claro {
+    background-color: var(--color-claro) !important;
+}
+
+.bg-oscuro {
+    background-color: var(--color-oscuro) !important;
+}
+
+.texto-primario {
+    color: var(--color-primario) !important;
+}
+
+.texto-secundario {
+    color: var(--color-gris) !important;
+}
+
+.texto-destacado {
+    color: var(--color-secundario) !important;
+}
+
+/* Botones personalizados */
+.btn-primario {
+    background-color: var(--color-primario);
+    border-color: var(--color-primario);
+    color: var(--color-blanco);
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primario:hover {
+    background-color: #34495e;
+    border-color: #34495e;
+    color: var(--color-blanco);
+    transform: translateY(-2px);
+    box-shadow: var(--sombra-hover);
+}
+
+.btn-secundario {
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    color: var(--color-blanco);
+}
+
+.btn-secundario:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+    color: var(--color-blanco);
+}
+
+/* Cards personalizadas */
+.sombra-card {
+    box-shadow: var(--sombra);
+    border: none;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.sombra-card:hover {
+    box-shadow: var(--sombra-hover);
+    transform: translateY(-5px);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--color-primario) 0%, var(--color-secundario) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
+.hero-icono {
+    font-size: 15rem;
+    color: rgba(255, 255, 255, 0.1);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Login */
+.fondo-login {
+    background: linear-gradient(135deg, var(--color-primario) 0%, var(--color-secundario) 100%);
+    min-height: 100vh;
+}
+
+/* Títulos */
+.titulo-principal {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-primario);
+    margin-bottom: 1rem;
+}
+
+.titulo-seccion {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-primario);
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.titulo-seccion::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-secundario);
+    border-radius: 2px;
+}
+
+/* Iconos */
+.icono-producto {
+    font-size: 3rem;
+    color: var(--color-secundario);
+}
+
+.icono-categoria {
+    font-size: 2.5rem;
+    color: var(--color-primario);
+}
+
+.icono-contacto {
+    font-size: 2rem;
+    color: var(--color-secundario);
+}
+
+/* Precios */
+.precio-producto {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-exito);
+    margin: 1rem 0;
+}
+
+/* Sidebar */
+.sidebar {
+    min-height: calc(100vh - 56px);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .nav-link {
+    color: var(--color-oscuro);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+}
+
+.sidebar .nav-link.activo {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+}
+
+/* Tablas */
+.table th {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    border: none;
+    font-weight: 600;
+}
+
+.table td {
+    vertical-align: middle;
+    border-color: #dee2e6;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+/* Badges */
+.badge {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+}
+
+/* Formularios */
+.form-control, .form-select {
+    border-radius: 0.5rem;
+    border: 2px solid #e9ecef;
+    padding: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--color-secundario);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+/* Modales */
+.modal-content {
+    border-radius: 1rem;
+    border: none;
+    box-shadow: var(--sombra-hover);
+}
+
+.modal-header {
+    background-color: var(--color-claro);
+    border-bottom: 2px solid var(--color-secundario);
+    border-radius: 1rem 1rem 0 0;
+}
+
+.modal-title {
+    color: var(--color-primario);
+    font-weight: 600;
+}
+
+/* Alertas */
+.alert {
+    border-radius: 0.75rem;
+    border: none;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-icono {
+        font-size: 8rem;
+    }
+    
+    .titulo-principal {
+        font-size: 2rem;
+    }
+    
+    .titulo-seccion {
+        font-size: 1.5rem;
+    }
+    
+    .sidebar {
+        min-height: auto;
+    }
+}
+
+/* Animaciones */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Utilidades */
+.text-center { text-align: center; }
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+.mb-5 { margin-bottom: 3rem; }
+
+.mt-0 { margin-top: 0; }
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 1rem; }
+.mt-4 { margin-top: 1.5rem; }
+.mt-5 { margin-top: 3rem; }
+
+.p-0 { padding: 0; }
+.p-1 { padding: 0.25rem; }
+.p-2 { padding: 0.5rem; }
+.p-3 { padding: 1rem; }
+.p-4 { padding: 1.5rem; }
+.p-5 { padding: 3rem; }
