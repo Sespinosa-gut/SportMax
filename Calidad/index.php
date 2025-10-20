@@ -152,12 +152,12 @@ require_once 'php/config.php';
                                 <div class="col-md-4 mb-3">
                                     <i class="fas fa-map-marker-alt icono-contacto mb-2"></i>
                                     <h5>Dirección</h5>
-                                    <p class="texto-secundario">Av. Principal 123<br>Ciudad, País</p>
+                                    <p class="texto-secundario">Diagonal 45 sur <br>Bogota, Colombia</p>
                                 </div>
                                 <div class="col-md-4 mb-3">
                                     <i class="fas fa-phone icono-contacto mb-2"></i>
                                     <h5>Teléfono</h5>
-                                    <p class="texto-secundario">+1 (555) 123-4567</p>
+                                    <p class="texto-secundario">3009613410</p>
                                 </div>
                                 <div class="col-md-4 mb-3">
                                     <i class="fas fa-envelope icono-contacto mb-2"></i>
@@ -189,3 +189,4 @@ require_once 'php/config.php';
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
